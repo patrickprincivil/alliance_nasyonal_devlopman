@@ -40,7 +40,10 @@ export default function Navbar() {
           Programs
         </a>
 
-        <a href="/constitution" style={{ color: "white", textDecoration: "none" }}>
+        <a
+          href="/constitution"
+          style={{ color: "white", textDecoration: "none" }}
+        >
           Constitution
         </a>
 
@@ -52,8 +55,18 @@ export default function Navbar() {
           Justice
         </a>
 
-        <a href="/justice-system" style={{ color: "white", textDecoration: "none" }}>
+        <a
+          href="/justice-system"
+          style={{ color: "white", textDecoration: "none" }}
+        >
           Justice System
+        </a>
+
+        <a
+          href="/national-engineering"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          Engineering
         </a>
 
         <a href="/journal" style={{ color: "white", textDecoration: "none" }}>
@@ -74,10 +87,7 @@ export default function Navbar() {
           Softwares
         </a>
 
-        <a
-          href="/tools"
-          style={{ color: "white", textDecoration: "none" }}
-        >
+        <a href="/tools" style={{ color: "white", textDecoration: "none" }}>
           Tools
         </a>
 
@@ -95,24 +105,15 @@ export default function Navbar() {
           Media Center
         </a>
 
-        <a
-          href="/ecommerce"
-          style={{ color: "white", textDecoration: "none" }}
-        >
+        <a href="/ecommerce" style={{ color: "white", textDecoration: "none" }}>
           E-Commerce
         </a>
 
-        <a
-          href="/dashboard"
-          style={{ color: "white", textDecoration: "none" }}
-        >
+        <a href="/dashboard" style={{ color: "white", textDecoration: "none" }}>
           Dashboard
         </a>
 
-        <a
-          href="/contact"
-          style={{ color: "white", textDecoration: "none" }}
-        >
+        <a href="/contact" style={{ color: "white", textDecoration: "none" }}>
           Contact
         </a>
       </div>
