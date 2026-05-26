@@ -1,19 +1,27 @@
-export default function Home() {
+export default function NationalEngineeringPage() {
   return (
     <main
       style={{
-        minHeight: "100vh",
-        background: "linear-gradient(to bottom, #065f46, #2563eb)",
-        color: "white",
         padding: "60px",
+        color: "white",
+        background: "#0f172a",
+        minHeight: "100vh",
       }}
     >
-      <h1 style={{ fontSize: "56px", fontWeight: "bold" }}>
-        🏛️ Alliance Nasyonal pou Devlopman
+      <h1 style={{ fontSize: "48px" }}>
+        National Engineering & Civil Protection
       </h1>
 
-      <p style={{ marginTop: "20px", fontSize: "22px" }}>
-        Home page is working.
+      <p
+        style={{
+          fontSize: "20px",
+          maxWidth: "900px",
+          lineHeight: "1.7",
+        }}
+      >
+        Educational platform for engineering, civil protection, emergency
+        preparedness, infrastructure resilience, maritime systems, aerospace
+        science, and lawful technology development.
       </p>
     </main>
   );
