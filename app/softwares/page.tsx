@@ -1,47 +1,47 @@
+import Navbar from "../Navbar";
+
 export default function SoftwaresPage() {
   const softwares = [
-    "AI Assistant",
+    "AI Legal Assistant",
+    "Court Directory System",
     "Case Management System",
-    "Court Scheduling",
-    "Digital Archive",
-    "E-Commerce Scanner",
-    "Analytics Dashboard",
+    "Document Archive",
+    "Public Records Portal",
+    "Complaint Tracking System",
+    "Constitution Education App",
+    "Sanctions Research Archive",
+    "Journal and Reports System",
     "Media Center",
-    "National Registry",
-    "Education Platform",
-    "Healthcare Records",
-    "Transportation Tracker",
-    "Smart City Systems",
+    "Analytics Dashboard",
+    "E-Commerce Safety Scanner",
+    "Translation System",
+    "Admin Control Panel",
+    "User Access System",
+    "Notification System",
   ];
 
   return (
-    <main style={{ padding: "60px", color: "white" }}>
-      <h1 style={{ fontSize: "48px" }}>
-        National Software Systems
-      </h1>
+    <main className="page">
+      <Navbar />
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns:
-            "repeat(auto-fit,minmax(240px,1fr))",
-          gap: "20px",
-          marginTop: "40px",
-        }}
-      >
+      <section className="hero">
+        <h1>National Software Systems</h1>
+
+        <p>
+          Software tools for justice, courts, constitution, public records,
+          AI support, civic education, reports, analytics, and safe digital
+          operations.
+        </p>
+      </section>
+
+      <section className="grid">
         {softwares.map((software) => (
-          <div
-            key={software}
-            style={{
-              background: "#1e293b",
-              padding: "30px",
-              borderRadius: "16px",
-            }}
-          >
+          <div className="card" key={software}>
             <h2>{software}</h2>
+            <p>Digital platform software module.</p>
           </div>
         ))}
-      </div>
+      </section>
     </main>
   );
 }

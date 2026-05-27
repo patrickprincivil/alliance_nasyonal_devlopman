@@ -1,26 +1,23 @@
+import Navbar from "../Navbar";
+
 export default function ContactPage() {
   return (
-    <main
-      style={{
-        padding: "60px",
-        color: "white",
-      }}
-    >
-      <h1>Contact Us</h1>
+    <main className="page">
+      <Navbar />
 
-      <div
-        style={{
-          marginTop: "30px",
-          lineHeight: "2",
-          fontSize: "20px",
-        }}
-      >
-        <p>Email: patrickprincivil@gmail.com</p>
+      <section className="hero">
+        <h1>Contact</h1>
 
-        <p>Location: Port-au-Prince, Haiti</p>
+        <p>
+          Contact the Alliance Nasyonal pou Devlopman team for civic,
+          technology, justice, education, and development collaboration.
+        </p>
 
-        <p>Organization: Alliance Nasyonal pou Devlopman</p>
-      </div>
+        <div className="card">
+          <h2>Email</h2>
+          <p>patrickprincivil@gmail.com</p>
+        </div>
+      </section>
     </main>
   );
 }

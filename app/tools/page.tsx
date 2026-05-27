@@ -1,51 +1,46 @@
+import Navbar from "../Navbar";
+
 export default function ToolsPage() {
   const tools = [
     "VS Code",
     "Next.js",
     "React",
     "TypeScript",
-    "Tailwind CSS",
-    "Node.js",
+    "Git",
     "GitHub",
+    "Vercel",
     "Canva",
+    "Microsoft 365",
+    "Google Workspace",
     "OBS Studio",
+    "Meta Business Suite",
     "Stripe",
     "PayPal",
     "Shopify",
-    "Meta Business",
-    "Google Workspace",
-    "Microsoft 365",
     "ChatGPT",
   ];
 
   return (
-    <main style={{ padding: "60px", color: "white" }}>
-      <h1 style={{ fontSize: "48px" }}>
-        Development Tools
-      </h1>
+    <main className="page">
+      <Navbar />
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns:
-            "repeat(auto-fit,minmax(220px,1fr))",
-          gap: "20px",
-          marginTop: "40px",
-        }}
-      >
+      <section className="hero">
+        <h1>Development Tools</h1>
+
+        <p>
+          Tools used to build, manage, publish, design, secure, and expand
+          the digital platform.
+        </p>
+      </section>
+
+      <section className="grid">
         {tools.map((tool) => (
-          <div
-            key={tool}
-            style={{
-              background: "#1e293b",
-              padding: "30px",
-              borderRadius: "16px",
-            }}
-          >
+          <div className="card" key={tool}>
             <h2>{tool}</h2>
+            <p>Platform development and management tool.</p>
           </div>
         ))}
-      </div>
+      </section>
     </main>
   );
 }

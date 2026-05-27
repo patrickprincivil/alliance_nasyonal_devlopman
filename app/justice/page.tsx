@@ -1,44 +1,38 @@
-export default function JusticeSystemPage() {
+import Navbar from "../Navbar";
+
+export default function JusticePage() {
   const systems = [
     "Courts",
-    "Police",
-    "Legal Aid",
     "Anti-Corruption",
-    "Prison Administration",
+    "Legal Aid",
     "Human Rights",
+    "Police Oversight",
+    "Constitution",
     "Investigations",
     "Public Records",
-    "Digital Case Tracking",
   ];
 
   return (
-    <main style={{ padding: "60px", color: "white" }}>
-      <h1 style={{ fontSize: "48px" }}>
-        National Justice System
-      </h1>
+    <main className="page">
+      <Navbar />
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns:
-            "repeat(auto-fit,minmax(240px,1fr))",
-          gap: "20px",
-          marginTop: "40px",
-        }}
-      >
-        {systems.map((item) => (
-          <div
-            key={item}
-            style={{
-              background: "#1e293b",
-              padding: "30px",
-              borderRadius: "16px",
-            }}
-          >
-            <h2>{item}</h2>
+      <section className="hero">
+        <h1>Haiti Justice System</h1>
+
+        <p>
+          Digital modernization and transparency systems for justice access,
+          accountability, constitutional education, and public trust.
+        </p>
+      </section>
+
+      <section className="grid">
+        {systems.map((system) => (
+          <div className="card" key={system}>
+            <h2>{system}</h2>
+            <p>Justice modernization system.</p>
           </div>
         ))}
-      </div>
+      </section>
     </main>
   );
 }

@@ -1,40 +1,43 @@
-export default function ConstitutionPage() {
+import Navbar from "../Navbar";
+
+export default function JusticeSystemPage() {
+  const systems = [
+    "Court Modernization",
+    "Digital Case Tracking",
+    "Public Complaint Portal",
+    "Legal Aid Access",
+    "Anti-Corruption Reporting",
+    "Human Rights Monitoring",
+    "Police Accountability",
+    "Prison Administration",
+    "Public Prosecutor Tracking",
+    "Judicial Transparency",
+    "Document Archive",
+    "Citizen Legal Education",
+  ];
+
   return (
-    <main style={{ padding: "60px", color: "white" }}>
-      <h1 style={{ fontSize: "48px" }}>
-        Constitution of Haiti (1987)
-      </h1>
+    <main className="page">
+      <Navbar />
 
-      <p
-        style={{
-          marginTop: "20px",
-          fontSize: "20px",
-          color: "#cbd5e1",
-          maxWidth: "900px",
-        }}
-      >
-        Educational archive and civic reference
-        for constitutional principles, democracy,
-        sovereignty, human rights, and governance.
-      </p>
+      <section className="hero">
+        <h1>National Justice System Software</h1>
 
-      <ul
-        style={{
-          marginTop: "40px",
-          lineHeight: "2",
-          fontSize: "20px",
-          color: "#cbd5e1",
-        }}
-      >
-        <li>Constitutional Rights</li>
-        <li>Separation of Powers</li>
-        <li>Executive Branch</li>
-        <li>Legislative Branch</li>
-        <li>Judicial Branch</li>
-        <li>Election Principles</li>
-        <li>Citizen Rights</li>
-        <li>National Sovereignty</li>
-      </ul>
+        <p>
+          Software modules for lawful justice modernization, transparency,
+          legal education, public records, human rights, accountability, and
+          citizen access.
+        </p>
+      </section>
+
+      <section className="grid">
+        {systems.map((system) => (
+          <div className="card" key={system}>
+            <h2>{system}</h2>
+            <p>Justice system software module.</p>
+          </div>
+        ))}
+      </section>
     </main>
   );
 }

@@ -1,3 +1,5 @@
+import Navbar from "../Navbar";
+
 export default function DashboardPage() {
   const systems = [
     "Justice System",
@@ -19,76 +21,27 @@ export default function DashboardPage() {
   ];
 
   return (
-    <main
-      style={{
-        padding: "60px",
-        color: "white",
-        minHeight: "100vh",
-        background:
-          "linear-gradient(to bottom, #0f172a, #111827)",
-      }}
-    >
-      <h1
-        style={{
-          fontSize: "56px",
-          fontWeight: "bold",
-        }}
-      >
-        National Operations Dashboard
-      </h1>
+    <main className="page">
+      <Navbar />
 
-      <p
-        style={{
-          marginTop: "20px",
-          fontSize: "22px",
-          color: "#cbd5e1",
-          maxWidth: "1000px",
-        }}
-      >
-        Unified digital platform for justice,
-        governance, civic organization,
-        national modernization, media,
-        analytics, and economic systems.
-      </p>
+      <section className="hero">
+        <h1>National Operations Dashboard</h1>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns:
-            "repeat(auto-fit,minmax(260px,1fr))",
-          gap: "24px",
-          marginTop: "50px",
-        }}
-      >
+        <p>
+          Unified digital dashboard for justice, governance, civic
+          organization, national modernization, media, analytics, and economic
+          systems.
+        </p>
+      </section>
+
+      <section className="grid">
         {systems.map((system) => (
-          <div
-            key={system}
-            style={{
-              background: "#1e293b",
-              padding: "30px",
-              borderRadius: "18px",
-              border: "1px solid #334155",
-            }}
-          >
-            <h2
-              style={{
-                fontSize: "24px",
-              }}
-            >
-              {system}
-            </h2>
-
-            <p
-              style={{
-                marginTop: "12px",
-                color: "#cbd5e1",
-              }}
-            >
-              National digital management module.
-            </p>
+          <div className="card" key={system}>
+            <h2>{system}</h2>
+            <p>National digital management module.</p>
           </div>
         ))}
-      </div>
+      </section>
     </main>
   );
 }

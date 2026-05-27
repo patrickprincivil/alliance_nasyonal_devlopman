@@ -1,3 +1,5 @@
+import Navbar from "../Navbar";
+
 export default function ProgramsPage() {
   const programs = [
     "Education",
@@ -6,74 +8,35 @@ export default function ProgramsPage() {
     "Technology",
     "Agriculture",
     "Logistics",
-    "Emergency Response",
-    "Economic Growth",
-    "AI & Innovation",
     "Transportation",
-    "Housing",
-    "Energy",
+    "Smart Cities",
+    "Economic Growth",
+    "Civil Protection",
+    "Justice Modernization",
+    "Public Records",
   ];
 
   return (
-    <main
-      style={{
-        padding: "60px",
-        color: "white",
-      }}
-    >
-      <h1
-        style={{
-          fontSize: "48px",
-          marginBottom: "40px",
-        }}
-      >
-        National Development Programs
-      </h1>
+    <main className="page">
+      <Navbar />
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns:
-            "repeat(auto-fit,minmax(250px,1fr))",
-          gap: "25px",
-        }}
-      >
-        {programs.map((program, index) => (
-          <div
-            key={index}
-            style={{
-              background: "#1e293b",
-              padding: "30px",
-              borderRadius: "18px",
-            }}
-          >
+      <section className="hero">
+        <h1>National Development Programs</h1>
+
+        <p>
+          Programs for education, infrastructure, justice, technology,
+          agriculture, healthcare, and national modernization.
+        </p>
+      </section>
+
+      <section className="grid">
+        {programs.map((program) => (
+          <div className="card" key={program}>
             <h2>{program}</h2>
-
-            <p
-              style={{
-                marginTop: "15px",
-                color: "#cbd5e1",
-              }}
-            >
-              National development initiative.
-            </p>
-
-            <button
-              style={{
-                marginTop: "20px",
-                padding: "12px 20px",
-                border: "none",
-                borderRadius: "10px",
-                background: "#2563eb",
-                color: "white",
-                cursor: "pointer",
-              }}
-            >
-              Learn More
-            </button>
+            <p>National development initiative.</p>
           </div>
         ))}
-      </div>
+      </section>
     </main>
   );
 }
