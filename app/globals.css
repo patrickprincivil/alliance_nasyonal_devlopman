@@ -8,3 +8,41 @@
   font-weight: bold;
 }
 
+.footer {
+  background: rgba(0, 0, 80, 0.95);
+  color: #00ccff;
+  padding: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer h2 {
+  color: #00ff99;
+  margin-bottom: 10px;
+}
+
+.cta {
+  background: #003b8f;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.cta h1 {
+  color: #00ff99;
+}
+
+.cta p {
+  color: #00ccff;
+  font-size: 20px;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 20px;
+  background: white;
+  color: #006400;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
