@@ -103,8 +103,9 @@ export default function DonationsPage() {
         <h1>Payment Setup</h1>
 
         <p>
-          Connect this page later to Stripe, PayPal, Shopify, or Square payment
-          links. Do not place secret API keys directly in this page.
+          Connect this page later to Stripe, PayPal, Shopify, Square, or direct
+          bank payment links. Do not place secret API keys directly in this
+          page.
         </p>
       </section>
     </main>
