@@ -33,3 +33,5 @@ export default function Navbar() {
   );
 }
 
+<a href="/satellite-internet">Satellite Internet</a>
+
