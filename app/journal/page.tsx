@@ -1,313 +1,317 @@
-const journalistTools = [
-  "Search public contracts",
-  "Download court documents",
-  "Download audit summaries",
-  "Submit public hearing questions",
-  "Request interviews",
-  "Track public officials",
-  "Track contractors",
-  "Track money trail",
-  "View public hearing calendar",
-  "View final court decisions",
-  "Download public reports",
-  "Check legal classification status",
-];
+import Navbar from "../components/Navbar";
 
-const publicAccessRules = [
-  "Public money means public records",
-  "Public contracts must be searchable",
-  "Court decisions must be published",
-  "Audit summaries must be downloadable",
-  "Journalists must be able to ask questions",
-  "Citizens must be able to submit evidence",
-  "Witnesses must be protected",
-  "Sensitive information must be handled legally",
-];
+export default function JournalPage() {
+  const sourceCards = [
+    {
+      title: "Haiti-Based News Sources",
+      text: "Le Nouvelliste, AyiboPost, AlterPresse, Haiti Libre, Radio Télévision Caraïbes, Radio Kiskeya, and other Haitian journalism sources.",
+    },
+    {
+      title: "International News Sources",
+      text: "CNN, Fox News, Reuters, AP, BBC, France 24, Al Jazeera, Miami Herald, and other public reporting sources.",
+    },
+    {
+      title: "Official Records",
+      text: "Court records, audit reports, public finance records, government notices, sanctions lists, police statements, and human rights reports.",
+    },
+  ];
 
-export default function JournalistCenterPage() {
+  const journalCategories = [
+    {
+      title: "Governance and Prime Ministers",
+      text: "Track prime minister changes, de facto authority questions, public statements, international support, elections, and constitutional debates.",
+    },
+    {
+      title: "Core Group and Foreign Influence",
+      text: "Track Core Group activity, embassy statements, Canada, France, United States, international missions, sanctions, aid conditions, and diplomatic involvement.",
+    },
+    {
+      title: "Article 149 Constitutional Review",
+      text: "Track how Article 149 of the 1987 Constitution has been interpreted, ignored, challenged, or bypassed during presidential vacancy and transition periods.",
+    },
+    {
+      title: "Constitution 1987 Protection",
+      text: "Defend the principle that no constitution should be changed by unlawful, de facto, corruption-linked, foreign-selected, or unaccountable political arrangements.",
+    },
+    {
+      title: "Judicial Appointment Review",
+      text: "Track reported or alleged court appointments, forced appointments, political appointments, judge removals, judge nominations, and judicial interference claims.",
+    },
+    {
+      title: "Corrupt Judge Evidence File",
+      text: "Build a lawful evidence file for judges accused in public reports, official complaints, audit records, sanctions, land theft cases, or court manipulation.",
+    },
+    {
+      title: "Political Party Reform",
+      text: "Track the number of political parties, party registration rules, party finance, party programs, electoral reform, and the proposal for three strong national political blocs.",
+    },
+    {
+      title: "Security and Gang Crisis",
+      text: "Track gang violence reports, displaced families, police updates, international security missions, public safety conditions, and institutional failures.",
+    },
+    {
+      title: "Public Money and Audit Archive",
+      text: "Track PetroCaribe, public contracts, foreign aid, national budget questions, public spending, development funds, and audit documents.",
+    },
+    {
+      title: "Land, Property, and Court Abuse",
+      text: "Track reported land theft, fraudulent sales, forged papers, illegal demolition, court manipulation, police involvement, and property abuse.",
+    },
+    {
+      title: "Ghost Payroll and Zombie Checks",
+      text: "Track reports of ghost employees, zombie checks, double salaries, absent workers, fake government staff, illegal payroll networks, and public salary abuse.",
+    },
+    {
+      title: "Diaspora and International Policy",
+      text: "Track diaspora support, migration policy, sanctions, foreign statements, international missions, and Haiti relations with other countries.",
+    },
+  ];
+
+  const leadershipFiles = [
+    {
+      title: "Jovenel Moïse File",
+      text: "Track public statements, reported court appointment concerns, land allegations, Pèlerin-related claims, constitutional questions, official responses, journalist reports, and court documents.",
+    },
+    {
+      title: "Martine Moïse File",
+      text: "Track public statements, legal status, reports, interviews, allegations, denials, court documents, and official records related to national accountability questions.",
+    },
+    {
+      title: "Ariel Henry File",
+      text: "Track de facto government questions, court appointment concerns, transitional authority, public statements, international support, allegations, denials, and official records.",
+    },
+    {
+      title: "Michel Martelly File",
+      text: "Track reported public allegations, court appointment concerns, nationality debates, public statements, sanctions questions, denials, and official records.",
+    },
+    {
+      title: "Moïse Jean-Charles Public Statements",
+      text: "Archive public statements, Senate-era claims, nationality allegations, passport claims, political warnings, and documents presented publicly.",
+    },
+    {
+      title: "Prime Ministers and Ministers Review",
+      text: "Track prime ministers, ministers, transitional officials, appointments, de facto authority, alleged conflicts of interest, and official responses.",
+    },
+  ];
+
+  const institutions = [
+    {
+      title: "DCPJ Review",
+      text: "Track investigations, public silence, case handling, political pressure claims, reports, official actions, and failures to act in major public accountability matters.",
+    },
+    {
+      title: "FADH Review",
+      text: "Track constitutional role, national security role, public statements, institutional weakness, silence, and legal responsibility during national crisis.",
+    },
+    {
+      title: "Police Review",
+      text: "Track police actions, court enforcement, illegal demolition allegations, land conflict involvement, gang crisis response, and public protection failures.",
+    },
+    {
+      title: "Court System Review",
+      text: "Track judges, prosecutors, clerks, lawyers, court corruption allegations, land cases, political cases, and public trust problems.",
+    },
+    {
+      title: "Notary and Land Registry Review",
+      text: "Track notaries, archives, property records, duplicate titles, forged deeds, registration abuse, and land transfer fraud claims.",
+    },
+    {
+      title: "Bar Association and Lawyers Review",
+      text: "Track lawyers accused in public reports of using legal language, court access, forged papers, or procedural manipulation to help steal land, houses, or public property.",
+    },
+  ];
+
+  const payrollRules = [
+    {
+      title: "Real Identity Verification",
+      text: "Every public worker must have verified identity, appointment file, work assignment, supervisor, office location, and public service role.",
+    },
+    {
+      title: "Attendance Verification",
+      text: "Salaries should be connected to verified attendance, work logs, supervisor validation, and service delivery records.",
+    },
+    {
+      title: "Residence and Work Location",
+      text: "Public employees paid to serve in Haiti should disclose work location, active assignment, lawful leave, and foreign travel status when relevant.",
+    },
+    {
+      title: "No Duplicate Payroll",
+      text: "A person should not receive multiple salaries from multiple public institutions unless the law clearly authorizes it and the record is public.",
+    },
+    {
+      title: "Public Payroll Dashboard",
+      text: "Publish institution-level payroll totals, number of employees, vacant positions, active positions, salary categories, and audit results.",
+    },
+    {
+      title: "Recovery of Public Money",
+      text: "If an official audit confirms illegal payments, the state should seek lawful recovery, suspension, discipline, prosecution, and public reporting.",
+    },
+  ];
+
+  const evidenceLevels = [
+    {
+      title: "Level 1: News Report",
+      text: "Article or broadcast published by a recognized journalist, newspaper, radio station, television station, or media outlet.",
+    },
+    {
+      title: "Level 2: Official Statement",
+      text: "Statement from government office, police, court, ministry, anti-corruption agency, election authority, or public institution.",
+    },
+    {
+      title: "Level 3: Official Report",
+      text: "Audit report, UN report, human rights report, public finance report, court record, sanctions list, or investigative file.",
+    },
+    {
+      title: "Level 4: Court Finding",
+      text: "Court decision, conviction, formal judgment, confirmed legal ruling, or final official legal determination.",
+    },
+  ];
+
   return (
     <main className="page">
-      <p className="eyebrow">Public Records</p>
+      <Navbar />
 
-      <h1>Journalist Access Center</h1>
-
-      <p>
-        Journalists must have access to public contracts, court files, audit
-        records, public money reports, government decisions, hearing records,
-        and legal classification labels.
-      </p>
-
-      <section className="subSection">
-        <h2>Journalist Tools</h2>
-
-        <div className="gridSection noPadding">
-          {journalistTools.map((tool) => (
-            <article className="card" key={tool}>
-              <h2>{tool}</h2>
-
-              <p>
-                This tool should connect to public records, official files,
-                audit documents, court status, and public hearing materials.
-              </p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="subSection">
-        <h2>Public Access Rules</h2>
-
-        <ol className="timeline">
-          {publicAccessRules.map((rule) => (
-            <li key={rule}>{rule}</li>
-          ))}
-        </ol>
-      </section>
-
-            <section className="hero">
-        <h1>Haiti Political Party Reform Journal</h1>
+      <section className="hero">
+        <h1>Haiti Journal and Evidence Archive</h1>
 
         <p>
-          Haiti needs a serious national political reform discussion. A small
-          country cannot build strong institutions when political parties are
-          fragmented, weak, temporary, personality-based, or created only for
-          elections.
+          This journal organizes Haiti reports, public allegations, official
+          records, court questions, constitutional issues, public money concerns,
+          land cases, political reform, and institutional accountability.
         </p>
 
         <p>
-          This section studies how Haiti can move toward fewer, stronger,
-          lawful, transparent, program-based political parties through electoral
-          reform, civic education, accountability, and constitutional debate.
+          The goal is truth, evidence, lawful review, protection of families,
+          protection of land, protection of public money, protection of the
+          Constitution, and rebuilding Haiti with justice.
         </p>
-      </section>
-
-      <section className="grid">
-        <div className="card">
-          <h2>Political Fragmentation Problem</h2>
-          <p>
-            Track reports, legal records, electoral data, and public debates
-            about the large number of registered political parties in Haiti,
-            weak party programs, weak internal democracy, and lack of national
-            development plans.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>Foreign Influence Review</h2>
-          <p>
-            Track public statements, diplomatic interventions, international
-            policy decisions, Core Group activity, embassy statements, sanctions,
-            aid conditions, and foreign involvement in Haiti political
-            transitions.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>Electoral Council Reform</h2>
-          <p>
-            Study how the electoral system can require transparent party
-            registration, public programs, audited finances, internal elections,
-            member lists, regional representation, and anti-corruption rules.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>Party Registration Standards</h2>
-          <p>
-            Require each political party to publish a national development
-            program, leadership list, constitution, finance report, membership
-            structure, youth program, women participation plan, and public
-            accountability policy.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>Public Finance Transparency</h2>
-          <p>
-            Political parties should report donations, campaign spending,
-            public funding, foreign support, advertising costs, contractors,
-            consultants, and debts.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>Anti-Gang Political Firewall</h2>
-          <p>
-            Any candidate or party accused in credible reports of gang support,
-            corruption, kidnapping financing, weapons trafficking, or public
-            money abuse should face lawful review before receiving public
-            authority or public funds.
-          </p>
-        </div>
       </section>
 
       <section className="hero">
-        <h1>Three Strong National Political Blocs</h1>
+        <h1>Journal Sources</h1>
+      </section>
+
+      <section className="grid">
+        {sourceCards.map((item) => (
+          <div className="card" key={item.title}>
+            <h2>{item.title}</h2>
+            <p>{item.text}</p>
+          </div>
+        ))}
+      </section>
+
+      <section className="hero">
+        <h1>Main Journal Categories</h1>
+      </section>
+
+      <section className="grid">
+        {journalCategories.map((item) => (
+          <div className="card" key={item.title}>
+            <h2>{item.title}</h2>
+            <p>{item.text}</p>
+          </div>
+        ))}
+      </section>
+
+      <section className="hero">
+        <h1>Leadership Accountability Files</h1>
 
         <p>
-          The goal is not dictatorship and not forced silence. The goal is to
-          encourage lawful consolidation into three strong national political
-          blocs with clear programs, transparent leadership, internal democracy,
-          and national development plans.
+          This section does not declare guilt. It creates structured files for
+          public allegations, official statements, journalist reports, legal
+          documents, sanctions, denials, and court findings involving public
+          leaders.
         </p>
       </section>
 
       <section className="grid">
-        <div className="card">
-          <h2>1. Justice, Constitution & Accountability Bloc</h2>
-          <p>
-            Focus: Constitution 1987, courts, honest judges, honest lawyers,
-            anti-corruption, sanctions review, public contracts, public money,
-            civil rights, police reform, and legal accountability.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>2. Economy, Infrastructure & Reconstruction Bloc</h2>
-          <p>
-            Focus: roads, ports, airports, agriculture, energy, water, housing,
-            jobs, small business, manufacturing, technology, trade, and national
-            reconstruction.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>3. Family, Education & Social Development Bloc</h2>
-          <p>
-            Focus: schools, universities, children, churches, health, food,
-            youth training, music, media, moral education, community services,
-            and diaspora cooperation.
-          </p>
-        </div>
+        {leadershipFiles.map((item) => (
+          <div className="card" key={item.title}>
+            <h2>{item.title}</h2>
+            <p>{item.text}</p>
+          </div>
+        ))}
       </section>
 
       <section className="hero">
-        <h1>Required Political Party Program</h1>
+        <h1>Institutional Accountability</h1>
 
         <p>
-          Every serious party should publish a complete national plan before
-          asking the people for power.
+          Public institutions must be reviewed by evidence. The journal must
+          track what institutions did, what they failed to do, and what records
+          prove.
         </p>
       </section>
 
       <section className="grid">
-        <div className="card">
-          <h2>Justice Plan</h2>
-          <p>
-            Court reform, police reform, prison reform, land protection,
-            anti-corruption, public complaint system, and legal aid.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>Security Plan</h2>
-          <p>
-            Public safety, anti-gang strategy, border control, police training,
-            intelligence coordination, community protection, and human rights.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>Economic Plan</h2>
-          <p>
-            Jobs, agriculture, factories, tourism, exports, taxation, small
-            business support, diaspora investment, and public finance.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>Infrastructure Plan</h2>
-          <p>
-            Roads, bridges, ports, airports, electricity, solar power, water,
-            sanitation, housing, hospitals, schools, and digital networks.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>Education Plan</h2>
-          <p>
-            Public schools, vocational training, online learning, AI education,
-            music, science, language, agriculture, trades, and leadership.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>Diaspora Plan</h2>
-          <p>
-            Diaspora voting, investment, land protection, remittance programs,
-            professional service networks, reconstruction funds, and business
-            partnerships.
-          </p>
-        </div>
+        {institutions.map((item) => (
+          <div className="card" key={item.title}>
+            <h2>{item.title}</h2>
+            <p>{item.text}</p>
+          </div>
+        ))}
       </section>
 
       <section className="hero">
-        <h1>Legal Reform Steps</h1>
+        <h1>Ghost Payroll, Zombie Checks, and Public Salary Abuse</h1>
+
+        <p>
+          This section tracks reports of ghost employees, zombie checks, double
+          salaries, absent workers, fake government staff, illegal payroll
+          networks, and public officials being paid while not living or not
+          working in Haiti.
+        </p>
       </section>
 
       <section className="grid">
-        <div className="card">
-          <h2>Step 1: National Audit of Political Parties</h2>
-          <p>
-            Create a public database of registered parties, leaders, programs,
-            finances, membership, legal status, and election history.
-          </p>
-        </div>
+        {payrollRules.map((item) => (
+          <div className="card" key={item.title}>
+            <h2>{item.title}</h2>
+            <p>{item.text}</p>
+          </div>
+        ))}
+      </section>
 
-        <div className="card">
-          <h2>Step 2: Minimum National Program Requirement</h2>
-          <p>
-            No party should participate seriously without a written program for
-            justice, economy, education, infrastructure, security, and public
-            finance.
-          </p>
-        </div>
+      <section className="hero">
+        <h1>Ghost Payroll Evidence Template</h1>
 
-        <div className="card">
-          <h2>Step 3: Coalition and Merger Incentives</h2>
-          <p>
-            Encourage smaller parties to merge into strong national blocs
-            instead of creating hundreds of weak temporary organizations.
-          </p>
-        </div>
+        <p>
+          Name or code • Institution • Job title • Salary amount • Date paid •
+          Appointment record • Work location • Attendance record • Supervisor •
+          Residence status • Travel status • Bank or payment record • Source •
+          What is alleged • What is confirmed • Official response • Legal
+          status • Next action.
+        </p>
+      </section>
 
-        <div className="card">
-          <h2>Step 4: Electoral Threshold</h2>
-          <p>
-            Study a lawful minimum vote threshold for public funding, ballot
-            access, parliamentary seats, and national recognition.
-          </p>
-        </div>
+      <section className="hero">
+        <h1>Evidence Levels</h1>
+      </section>
 
-        <div className="card">
-          <h2>Step 5: Party Finance Transparency</h2>
-          <p>
-            Require audited reports for donations, public funding, foreign
-            support, campaign expenses, contractors, and debts.
-          </p>
-        </div>
-
-        <div className="card">
-          <h2>Step 6: Public Debate Requirement</h2>
-          <p>
-            Require televised and online public debates where each party must
-            explain its program before the people.
-          </p>
-        </div>
+      <section className="grid">
+        {evidenceLevels.map((item) => (
+          <div className="card" key={item.title}>
+            <h2>{item.title}</h2>
+            <p>{item.text}</p>
+          </div>
+        ))}
       </section>
 
       <section className="hero">
         <h1>Publication Rule</h1>
 
         <p>
-          This journal must not publish unsupported accusations as final facts.
-          Use lawful language: reported, alleged, under investigation, audited,
-          sanctioned, charged, denied, confirmed by court, or confirmed by
-          official record.
+          Use careful legal wording: reported, alleged, suspected, publicly
+          stated, under audit, under investigation, sanctioned, charged, denied,
+          confirmed by payroll record, confirmed by audit, confirmed by official
+          record, or confirmed by court.
+        </p>
+
+        <p>
+          Do not write that a person is guilty unless a court, official audit,
+          official sanction, or verified legal record supports that statement.
         </p>
       </section>
-
-      
     </main>
   );
 }
