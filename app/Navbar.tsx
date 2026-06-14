@@ -18,6 +18,9 @@ export default function Navbar() {
         <a href="/public-money">Public Money</a>
         <a href="/public-contracts">Contracts</a>
         <a href="/post-jovenel-review">Post Jovenel</a>
+        <a href="/haiti-restitution-claim">Restitution Claim</a>
+        <a href="/global-internet-protection">Global Internet</a>
+        <a href="/satellite-internet">Satellite Internet</a>
         <a href="/national-engineering">Engineering</a>
         <a href="/farming">Farming</a>
         <a href="/transport-industry">Transport</a>
@@ -26,6 +29,8 @@ export default function Navbar() {
         <a href="/radio">Radio</a>
         <a href="/internet-radio">Internet Radio</a>
         <a href="/radio-firmware">Radio Firmware</a>
+        <a href="/bible-radio">Bible Radio</a>
+        <a href="/ai-bible-radio">AI Bible Radio</a>
         <a href="/music">Music</a>
         <a href="/digital-products">Digital Products</a>
         <a href="/products">Products</a>
@@ -37,6 +42,4 @@ export default function Navbar() {
     </header>
   );
 }
-
-<a href="/global-internet">Global Internet</a>
 
