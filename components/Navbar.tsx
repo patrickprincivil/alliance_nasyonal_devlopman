@@ -420,11 +420,14 @@ export default function HaitiNationalResetPage() {
           </div>
         ))}
       </section>
+
+      <a href="/haiti-national-reset">National Reset</a>
+      app/haiti-national-reset/page.tsx
     </main>
   );
 }
 
-<a href="/haiti-national-reset">National Reset</a>
 
-<a href="/radio-setup">Radio Setup</a>
+
+
 

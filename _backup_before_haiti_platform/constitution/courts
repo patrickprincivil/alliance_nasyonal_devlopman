@@ -1,0 +1,44 @@
+import Navbar from "../components/Navbar";
+
+export default function CourtsPage() {
+  const courts = [
+    "Cour de Cassation — Supreme Court",
+    "Cours d’Appel — Courts of Appeal",
+    "Tribunaux de Première Instance — First Instance Courts",
+    "Tribunaux de Paix — Peace Courts",
+    "Tribunal Spécial du Travail — Labor Court",
+    "Tribunal de Commerce — Commercial Court",
+    "Tribunal Administratif — Administrative Justice",
+    "Conseil Supérieur du Pouvoir Judiciaire — Judicial Council",
+    "Ministère de la Justice et de la Sécurité Publique",
+    "Parquet / Public Prosecutor Offices",
+    "Public Records and Legal Archives",
+    "Legal Aid and Citizen Access",
+  ];
+
+  return (
+    <main className="page">
+      <Navbar />
+
+      <section className="hero">
+        <h1>Highest Courts and Justice Institutions</h1>
+
+        <p>
+          Directory-style software section for Haiti’s courts, justice
+          institutions, court levels, legal records, access to justice,
+          public transparency, and constitutional order.
+        </p>
+      </section>
+
+      <section className="grid">
+        {courts.map((court) => (
+          <div className="card" key={court}>
+            <h2>{court}</h2>
+            <p>Justice institution directory and information module.</p>
+          </div>
+        ))}
+      </section>
+    </main>
+  );
+}
+

@@ -491,8 +491,188 @@ export default function JournalPage() {
         </div>
       </section>
 
-      
+            <section className="hero">
+        <h1>Foreign Interference Withdrawal Demand</h1>
+
+        <p>
+          This section documents Haiti’s lawful demand for the withdrawal of
+          foreign political control, unelected diplomatic interference, private
+          security arrangements, and any external influence operating without
+          clear constitutional authority, public transparency, Haitian consent,
+          independent oversight, and court review.
+        </p>
+
+        <p>
+          This is not a call for violence, revenge, or private action. This is a
+          lawful sovereignty demand for documents, audits, courts, elections,
+          public transparency, and withdrawal through legal national pressure.
+        </p>
+      </section>
+
+      <section className="grid">
+        <div className="card">
+          <h2>UN / LONU Role Review</h2>
+          <p>
+            Track UN mandates, Security Council decisions, mission documents,
+            public statements, Haiti consent, human rights safeguards, funding,
+            and measurable results delivered to the Haitian population.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>United States Role Review</h2>
+          <p>
+            Track diplomatic pressure, security policy, sanctions, aid programs,
+            public statements, election policy, contract influence, and any role
+            in unelected transition arrangements.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>Canada Role Review</h2>
+          <p>
+            Track sanctions, aid funding, security support, diplomatic
+            statements, Haiti policy, public-money oversight, and any influence
+            over transition decisions.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>France Role Review</h2>
+          <p>
+            Track diplomatic conduct, public statements, Haiti policy,
+            historical responsibility discussions, transition influence, and
+            respect for Haitian sovereignty.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>CARICOM Role Review</h2>
+          <p>
+            Track mediation, transition proposals, meeting records, official
+            declarations, legal authority questions, and whether CARICOM actions
+            respected Haitian constitutional order.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>Core Group Role Review</h2>
+          <p>
+            Track diplomatic coordination, public statements, political
+            influence, transition recommendations, and the fact that the Core
+            Group is not a Haitian constitutional governing authority.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>Unelected Transition Review</h2>
+          <p>
+            Track all unelected transition structures, appointment decrees,
+            legal basis, public consent, court challenges, mandate limits,
+            election calendar, and constitutional objections.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>Foreign Security Contractors</h2>
+          <p>
+            Track all private security contracts, drone operations, task forces,
+            financing sources, public contract text, oversight bodies, human
+            rights safeguards, and measurable results.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>Gang-Financing Investigation</h2>
+          <p>
+            Track sanctions evidence, public allegations, financial networks,
+            customs records, banking evidence obtained legally, court files, and
+            prosecution status for alleged gang financiers.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>Public Money and Donor Money</h2>
+          <p>
+            Track donor funds, public contracts, security spending, aid
+            programs, audits, procurement records, CSCCA reports, and whether
+            Haitian citizens received measurable benefits.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>Election Calendar Demand</h2>
+          <p>
+            Track whether unelected authorities and foreign actors have provided
+            a public election calendar, security plan, voter protection plan,
+            constitutional pathway, and transfer-of-power process.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>Withdrawal Demand</h2>
+          <p>
+            Demand the withdrawal of foreign political control, unelected
+            interference, secret security contracts, and any arrangement that
+            operates without Haitian constitutional authority, public
+            transparency, and independent oversight.
+          </p>
+        </div>
+      </section>
+
+      <section className="hero">
+        <h1>Required Public Questions</h1>
+
+        <p>
+          Show the law. Show the decree. Show who signed. Show who paid. Show
+          the public contract. Show the court review. Show the human rights
+          safeguards. Show the election calendar. Show the results delivered to
+          the Haitian population.
+        </p>
+      </section>
+
+      <section className="grid">
+        <div className="card">
+          <h2>Legal Rule</h2>
+          <p>
+            No threats. No private revenge. No mob action. No fake accusations.
+            No violence. Use documents, courts, audits, public records,
+            independent investigation, and lawful civic pressure.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>Evidence Rule</h2>
+          <p>
+            Every claim must be labeled as reported, alleged, disputed, under
+            investigation, audited, sanctioned, charged, denied, confirmed by
+            official record, or confirmed by court judgment.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>Population Result Test</h2>
+          <p>
+            Ask whether Haitians received safer streets, reopened schools,
+            protected hospitals, lower kidnappings, secure roads, restored
+            courts, reopened businesses, and a real election pathway.
+          </p>
+        </div>
+
+        <div className="card">
+          <h2>Public Demand</h2>
+          <p>
+            Haiti must be governed by Haitian people under Haitian law, with
+            transparent institutions, independent courts, clean public money,
+            national sovereignty, and real elections.
+          </p>
+        </div>
+      </section>
+
+
     </main>
   );
 }
+
+
 

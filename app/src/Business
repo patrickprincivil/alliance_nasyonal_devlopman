@@ -1,0 +1,61 @@
+import { demoBusinesses } from "@/data/demoBusinesses";
+
+export default function BusinessesPage() {
+  return (
+    <main className="min-h-screen bg-slate-950 px-6 py-16 text-white">
+
+      <div className="mx-auto max-w-6xl">
+
+        <h1 className="text-4xl font-bold">
+          Haitian Business Directory
+        </h1>
+
+        <p className="mt-3 text-slate-400">
+          Discover businesses, products and services.
+        </p>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+
+          {demoBusinesses.map((business) => (
+            <article
+              key={business.id}
+              className="rounded-2xl border border-slate-800 bg-slate-900 p-6"
+            >
+
+              <div className="flex items-center justify-between">
+
+                <h2 className="text-xl font-bold">
+                  {business.name}
+                </h2>
+
+                {business.verified && (
+                  <span className="text-sm text-emerald-400">
+                    Verified
+                  </span>
+                )}
+
+              </div>
+
+              <p className="mt-2 text-sm text-slate-400">
+                {business.category} · {business.city}
+              </p>
+
+              <p className="mt-5 text-slate-300">
+                {business.description}
+              </p>
+
+              <button className="mt-6 rounded-lg bg-emerald-500 px-4 py-2 font-semibold text-slate-950">
+                Contact Business
+              </button>
+
+            </article>
+          ))}
+
+        </div>
+
+      </div>
+
+    </main>
+  );
+}
+

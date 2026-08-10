@@ -1,4 +1,4 @@
-import Navbar from "../Navbar";
+import Navbar from "../../app_backup_before_haiti_platform/constitution/data/Navbar";
 
 export default function JusticePage() {
   const systems = [
