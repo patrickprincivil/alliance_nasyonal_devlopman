@@ -35,7 +35,7 @@ export default function SilveroakAppLaunchPage() {
           {included.map((item) => <li key={item}>{item}</li>)}
         </ul>
         <p>Optional AI assistants, online payments, e-commerce, booking and customer portals require separate scope and testing; none are represented as deployed here.</p>
-        <Link className="statusBadge" href="/silveroak-app-launch/request">Request a project consultation</Link>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}><Link className="statusBadge" href="/silveroak-app-launch/request">Request a project consultation</Link><Link className="statusBadge" href="/silveroak-app-launch/quote">Preview a quote</Link></div>
       </section>
     </main>
   );
