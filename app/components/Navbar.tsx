@@ -1,10 +1,7 @@
 export default function Navbar() {
   return (
     <header className="navbar">
-      <div>
-        <h2>Alliance Nasyonal</h2>
-      </div>
-
+      <div><h2>Alliance Nasyonal</h2></div>
       <nav className="navlinks">
         <a href="/">Home</a>
         <a href="/about">About</a>
@@ -27,11 +24,11 @@ export default function Navbar() {
         <a href="/products">Products</a>
         <a href="/softwares">Softwares</a>
         <a href="/tools">Tools</a>
+        <a href="/satellite-internet">Satellite Internet</a>
+        <a href="/silveroak-app-launch">Silveroak AI App Launch</a>
+        <a href="/master-control-center">Master Control Center</a>
         <a href="/contact">Contact</a>
       </nav>
     </header>
   );
 }
-
-<a href="/satellite-internet">Satellite Internet</a>
-
