@@ -26,6 +26,7 @@ export default function Navbar() {
         <a href="/tools">Tools</a>
         <a href="/satellite-internet">Satellite Internet</a>
         <a href="/silveroak-app-launch">Silveroak AI App Launch</a>
+        <a href="/global-education">Global Education</a>
         <a href="/master-control-center">Master Control Center</a>
         <a href="/contact">Contact</a>
       </nav>
