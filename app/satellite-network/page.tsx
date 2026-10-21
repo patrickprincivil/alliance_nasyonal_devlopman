@@ -1,20 +1,13 @@
 import Link from "next/link";
-const operators = ["Starlink / SpaceX", "Eutelsat OneWeb", "SES O3b mPOWER", "Viasat", "Hughes / EchoStar", "Amazon Leo"];
-const features = [
-  ["Connectivity", "Satellite backhaul, managed Wi-Fi, fiber links, backup uplinks"],
-  ["Communities", "Homes, clinics, schools, farms, businesses and local offline library"],
-  ["Devices", "Cameras, TVs, computers, sensors, robots and vehicle telemetry"],
-  ["Operations", "Installation requests, inventory, tickets, capacity and support"],
-  ["Finance", "Projected budgets, donor-funded access and subscriber billing"],
-  ["Security", "Segmentation, access controls, privacy, logs and incident response"],
-  ["Regulation", "Country-specific CONATEL and INDOTEL compliance gates"],
-  ["AI assistance", "Monitoring and forecasts, subject to human approval"],
-];
+import { SATELLITE_OPERATORS, SATELLITE_FEATURES } from "@/lib/silveroak/satellite-network";
+const operators = SATELLITE_OPERATORS.map(operator => operator.name);
+const features = SATELLITE_FEATURES.map(f => [f.title, f.description]);
 export default function SatelliteNetworkPlanningPage() {
   return <main className="page">
     <p className="eyebrow">MASTER DEVLOPMAN / TELECOM_WIFI</p>
     <h1>Silveroak Global Satellite Network</h1>
     <p>Haiti & Dominican Republic — V3.1 planning dashboard. These services, operators and sites are proposals. No provider is contracted, no permit is confirmed and no network has been deployed.</p>
+    <p><Link href="/satellite-network/operators">Operator comparison and procurement gates</Link> · <Link href="/satellite-network/pilots">Two-site pilot register</Link></p>
     <section className="subSection"><h2>Potential Satellite Operators</h2>
       <div className="gridSection">{operators.map(name=><article className="card" key={name}><h3>{name}</h3><p>Commercial availability, pricing and redistribution rights require confirmation.</p><p>Status: Not verified</p></article>)}</div>
     </section>
