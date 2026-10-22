@@ -4,6 +4,7 @@ const centers = [
   { title: "Projects & sectors", detail: "Project registry, tasks, dependencies and milestones", href: "/programs" },
   { title: "AI production", detail: "AI-assisted delivery and agent operations (planned)", href: "/agent-control-center" },
   { title: "App Factory", detail: "Customer-facing AI App Launch service", href: "/silveroak-app-launch" },
+  { title: "Global Employment", detail: "Jobs, employer verification, candidate rights and recruitment roadmap (planned)", href: "/global-employment" },
   { title: "Revenue", detail: "Quotes, invoices and subscriptions (integration pending)", href: "/digital-products" },
   { title: "Foundation", detail: "Donations and community programs", href: "/donations" },
   { title: "National dashboard", detail: "Existing transparency dashboard", href: "/dashboard" },
