@@ -7,7 +7,7 @@ export default function SatelliteNetworkPlanningPage() {
     <p className="eyebrow">MASTER DEVLOPMAN / TELECOM_WIFI</p>
     <h1>Silveroak Global Satellite Network</h1>
     <p>Haiti & Dominican Republic — V3.1 planning dashboard. These services, operators and sites are proposals. No provider is contracted, no permit is confirmed and no network has been deployed.</p>
-    <p><Link href="/satellite-network/operators">Operator comparison and procurement gates</Link> · <Link href="/satellite-network/pilots">Two-site pilot register</Link></p>
+    <p><Link href="/satellite-network/operators">Operator comparison and procurement gates</Link> · <Link href="/satellite-network/pilots">Two-site pilot register</Link> · <Link href="/satellite-network/cost-model">36-month cost model</Link></p>
     <section className="subSection"><h2>Potential Satellite Operators</h2>
       <div className="gridSection">{operators.map(name=><article className="card" key={name}><h3>{name}</h3><p>Commercial availability, pricing and redistribution rights require confirmation.</p><p>Status: Not verified</p></article>)}</div>
     </section>
