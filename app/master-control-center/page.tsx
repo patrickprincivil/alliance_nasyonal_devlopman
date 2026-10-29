@@ -7,6 +7,7 @@ const centers = [
   { title: "Global Employment", detail: "Jobs, employer verification, candidate rights and recruitment roadmap (planned)", href: "/global-employment" },
   { title: "Revenue", detail: "Quotes, invoices and subscriptions (integration pending)", href: "/digital-products" },
   { title: "Foundation", detail: "Donations and community programs", href: "/donations" },
+  { title: "Awards & Recognition", detail: "Nominations, independent judging and certificates (planned)", href: "/awards" },
   { title: "National dashboard", detail: "Existing transparency dashboard", href: "/dashboard" },
 ];
 
