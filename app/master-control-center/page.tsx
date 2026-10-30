@@ -7,6 +7,7 @@ const centers = [
   { title: "Global Employment", detail: "Jobs, employer verification, candidate rights and recruitment roadmap (planned)", href: "/global-employment" },
   { title: "Silveroak CRM", detail: "Contacts, leads, pipeline, quotes and follow-ups (MVP blueprint)", href: "/silveroak-crm" },
   { title: "Marketing Integration Hub", detail: "Social, ads, analytics and AI connector planning (not connected)", href: "/marketing-engine" },
+  { title: "Global Broadcasting", detail: "Studio, streaming and satellite broadcasting roadmap (planning only)", href: "/broadcasting" },
   { title: "Revenue", detail: "Quotes, invoices and subscriptions (integration pending)", href: "/digital-products" },
   { title: "Foundation", detail: "Donations and community programs", href: "/donations" },
   { title: "Awards & Recognition", detail: "Nominations, independent judging and certificates (planned)", href: "/awards" },
