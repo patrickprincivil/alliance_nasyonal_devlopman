@@ -134,6 +134,8 @@ export default function SatelliteInternetPage() {
           Connect Radio
         </a>
 
+        <a className="button" href="/satellite-internet/network">Network V3 Planning Dashboard</a>
+
         <a className="button" href="/contact">
           Request Setup
         </a>
