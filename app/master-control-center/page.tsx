@@ -5,6 +5,8 @@ const centers = [
   { title: "AI production", detail: "AI-assisted delivery and agent operations (planned)", href: "/agent-control-center" },
   { title: "App Factory", detail: "Customer-facing AI App Launch service", href: "/silveroak-app-launch" },
   { title: "Global Employment", detail: "Jobs, employer verification, candidate rights and recruitment roadmap (planned)", href: "/global-employment" },
+  { title: "Silveroak CRM", detail: "Contacts, leads, pipeline, quotes and follow-ups (MVP blueprint)", href: "/silveroak-crm" },
+  { title: "Marketing Integration Hub", detail: "Social, ads, analytics and AI connector planning (not connected)", href: "/marketing-engine" },
   { title: "Revenue", detail: "Quotes, invoices and subscriptions (integration pending)", href: "/digital-products" },
   { title: "Foundation", detail: "Donations and community programs", href: "/donations" },
   { title: "Awards & Recognition", detail: "Nominations, independent judging and certificates (planned)", href: "/awards" },
