@@ -378,3 +378,26 @@ Dokiman V9 sa a se baz konsolidasyon. Li pa sètifye ke tout sistèm yo konstwi,
 7. Pibliye rapò pwogrè ki separe sa ki verifye, sa ki ankou, sa ki pare, sa ki poko kòmanse ak sa ki bloke.
 
 **Fen dokiman — MASTER DEVLOPMAN V9**
+
+
+---
+
+## PART 11 — GLOBAL PUBLISHING & MEDIA DIVISION
+
+**Placement:** Integrated division; not a separate platform. **Status:** PROPOSED; operational workflows not implemented.
+
+### Scope
+Writing and research; editorial review; fact-checking; design; EPUB/PDF; print coordination; translation; audiobooks; international distribution; author services; rights, ISBN records and royalties; AI-assisted production with human approval.
+
+### Shared-service reuse
+- Global Digital Library remains the shared catalog and reading/discovery layer.
+- Marketplace and Revenue/Finance handle listings, checkout, invoices, payments and accounting.
+- Shared Core provides identity, tenant isolation, documents, approvals, audit, notifications and backups.
+- Marketing Engine handles campaigns and acquisition analytics.
+- Publishing owns title/edition records, manuscript versions, editorial workflow, rights, print jobs and distribution releases.
+
+### Initial collections
+Technology; national development; business; education. Proposed flagship: Silveroak AI & Robotics Engineering Center, subject to engineering review, citations and safety review.
+
+### Status control
+A blueprint and information page do not mean a publishing team, print facility, ISBN account, distributor contract, public checkout or publishing workflow is operational. No partner agreement or commercial launch is claimed. See docs/SILVEROAK_GLOBAL_PUBLISHING_MEDIA_V1.md.
