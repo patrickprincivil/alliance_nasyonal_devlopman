@@ -1,4 +1,4 @@
-import Navbar from "../../app_backup_before_haiti_platform/constitution/data/Navbar";
+import Navbar from "../components/Navbar";
 
 export default function SoftwaresPage() {
   const softwares = [

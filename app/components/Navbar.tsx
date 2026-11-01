@@ -1,37 +1,24 @@
 export default function Navbar() {
   return (
     <header className="navbar">
-      <div>
-        <h2>Alliance Nasyonal</h2>
-      </div>
-
+      <div><h2>Alliance Nasyonal</h2></div>
       <nav className="navlinks">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/constitution">Constitution</a>
-        <a href="/courts">Courts</a>
-        <a href="/journal">Journal</a>
-        <a href="/justice">Justice</a>
-        <a href="/public-money">Public Money</a>
-        <a href="/public-contracts">Contracts</a>
-        <a href="/hearings">Hearings</a>
-        <a href="/journalist-center">Journalists</a>
-        <a href="/farming">Farming</a>
-        <a href="/transport-industry">Transport</a>
-        <a href="/national-engineering">Engineering</a>
-        <a href="/programs">Programs</a>
-        <a href="/donations">Donations</a>
-        <a href="/radio">Radio</a>
-        <a href="/music">Music</a>
-        <a href="/digital-products">Digital Products</a>
-        <a href="/products">Products</a>
-        <a href="/softwares">Softwares</a>
-        <a href="/tools">Tools</a>
+        <a href="/">Home</a><a href="/about">About</a><a href="/constitution">Constitution</a>
+        <a href="/courts">Courts</a><a href="/journal">Journal</a><a href="/justice">Justice</a>
+        <a href="/public-money">Public Money</a><a href="/public-contracts">Contracts</a>
+        <a href="/hearings">Hearings</a><a href="/journalist-center">Journalists</a>
+        <a href="/farming">Farming</a><a href="/transport-industry">Transport</a>
+        <a href="/national-engineering">Engineering</a><a href="/programs">Programs</a>
+        <a href="/donations">Donations</a><a href="/radio">Radio</a><a href="/music">Music</a>
+        <a href="/digital-products">Digital Products</a><a href="/products">Products</a>
+        <a href="/softwares">Softwares</a><a href="/tools">Tools</a>
+        <a href="/satellite-internet">Satellite Internet</a>
+        <a href="/global-digital-library">Global Digital Library</a>
+        <a href="/global-publishing">Global Publishing & Media</a>
+        <a href="/silveroak-app-launch">Silveroak AI App Launch</a>
+        <a href="/global-education">Global Education</a><a href="/master-control-center">Master Control Center</a>
         <a href="/contact">Contact</a>
       </nav>
     </header>
   );
 }
-
-<a href="/satellite-internet">Satellite Internet</a>
-

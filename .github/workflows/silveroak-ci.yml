@@ -1,0 +1,30 @@
+name: Silveroak Next.js checks
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main, feature/silveroak-90-day-foundation]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install from lockfile
+        run: npm ci
+      - name: TypeScript check
+        run: npx tsc --noEmit
+      - name: ESLint
+        run: npm run lint
+      - name: Production build
+        run: npm run build
